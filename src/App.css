@@ -1,0 +1,54 @@
+.slick-dots {
+  bottom: 20px !important;
+}
+
+.slick-dots > li button::before {
+  font-size: 12px !important;
+  color: black !important;
+}
+
+/* .about-section {
+clip-path: polygon(0px 0px, 100% 0px, 100% 95%, 0% 100%)
+} */
+
+.parent-li:hover div {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .desktop-nav-links {
+    display: none;
+  }
+
+  .mobile-nav-links-toggle {
+    display: flex;
+  }
+}
+
+.calc-height {
+  height: 50vh;
+}
+
+@media (min-width: 1200px) {
+  .calc-height {
+    height: calc(100vh - 112px);
+  }
+}
+
+@media (min-width: 1700px) {
+  .calc-height {
+    height: 70vh;
+  }
+}
+
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.bg-kj {
+  background-image: url(./assets/tempImage.jpg);
+  background-repeat: no-repeat;
+  background-position: 27% 0%;
+  background-size: cover;
+}

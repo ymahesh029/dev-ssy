@@ -9,7 +9,7 @@ const Enquirey = () => {
   };
 
   return (
-    <div className="fixed  z-20 top-[100%] left-0">
+    <div className="fixed  z-20 top-[80%] left-0">
       <div className="flex  flex-col gap-2">
         <div>
           {/* <div className="bg-sky-600 rounded-l-full h-12 w-12 flex items-center justify-center"> */}
@@ -20,7 +20,7 @@ const Enquirey = () => {
           <img src={facebook} onClick={toggleSidebar} alt="social-media-icon" className="h-10 w-10" />
           {/* </Link> */}
         </div>
-        <div className={`fixed bottom-10 left-0 h-96 w-80 rounded-lg  bg-blue-800 text-white transition-all duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-64'}`}>
+        <div className={`fixed bottom-10 left-0 h-96 w-48 rounded-lg  bg-blue-800 text-white transition-all duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-64'}`}>
 
           <div  >
 

@@ -29,7 +29,7 @@ const Navbar = () => {
             />
             {/* <b class='px-0' > Bhakti Shakti Yog   
                Foundation</b> */}
-            <b class='h-10 m-0 z-100'> <p className='text-[#3b82f6]'>BHAKTI</p> <p className='text-[#65a30d]'>SHAKTI  YOG </p>
+            <b class='h-14 m-0 z-100'> <p className='text-[#3b82f6]'>BHAKTI</p> <p className='text-[#65a30d]'>SHAKTI  YOG </p>
               <p className='text-[#fb923c]'>FOUNDATION</p></b>
           </Link>
           <ul className="flex text-[17px] font-normal desktop-nav-links">

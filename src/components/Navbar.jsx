@@ -11,9 +11,9 @@ const Navbar = () => {
   const { pathname } = useLocation();
 
   return (
-    <header className="relative w-full shadow-md">
-  
- 
+    <header className="relative  w-full shadow-md">
+
+
 
       <div className="w-full bg-white">
         <nav className="w-full flex items-center justify-between text-[#353030] h-18 max-w-[800px] lg:max-w-[1100px] 2xl:max-w-[1300px] mx-auto">
@@ -27,10 +27,10 @@ const Navbar = () => {
               alt="logo"
               className="w-full h-auto cursor-pointer"
             />
-            {/* <b class='px-0' > Bhakti Shakti Yog  
+            {/* <b class='px-0' > Bhakti Shakti Yog   
                Foundation</b> */}
-               <b class='h-13 m-0 z-100'> BHAKTI SHAKTI YOG 
-               FOUNDATION</b>
+            <b class='h-10 m-0 z-100'> <p className='text-[#3b82f6]'>BHAKTI</p> <p className='text-[#65a30d]'>SHAKTI  YOG </p>
+              <p className='text-[#fb923c]'>FOUNDATION</p></b>
           </Link>
           <ul className="flex text-[17px] font-normal desktop-nav-links">
             <li className="hover:text-black py-7 relative group">
@@ -38,9 +38,8 @@ const Navbar = () => {
                 Home
               </Link>
               <div
-                className={`absolute bottom-5 left-0 h-0.5 bg-black ${
-                  pathname == "/" ? "w-full" : "w-0"
-                } transition-all duration-300 group-hover:w-full`}
+                className={`absolute bottom-5 left-0 h-0.5 bg-black ${pathname == "/" ? "w-full" : "w-0"
+                  } transition-all duration-300 group-hover:w-full`}
               ></div>
             </li>
             {/* <li className="hover:text-black py-7 relative group">
@@ -84,14 +83,43 @@ const Navbar = () => {
                 Wisdom
               </Link>
               <div
-                className={`absolute bottom-5 left-0 h-0.5 bg-black  ${
-                  pathname == "/wisdom" ? "w-full" : "w-0"
-                } transition-all duration-300 group-hover:w-full`}
+                className={`absolute bottom-5 left-0 h-0.5   ${pathname == "/wisdom" ? "w-full" : "w-0"
+                  } transition-all duration-300 group-hover:w-full`}
               ></div>
-              <ul className="invisible group-hover:visible absolute z-10 top-[5.4rem] left-0 bg-stone-700 font-normal text-white py-2 min-w-[250px] shadow-lg transition-all duration-200 opacity-0 group-hover:opacity-100 text-[15px]">
+              <ul className="invisible group-hover:visible absolute z-10 top-[5.4rem] left-0  font-normal  py-2 min-w-[250px] shadow-lg transition-all duration-200 opacity-0 group-hover:opacity-100 text-[15px]">
                 <li className="parent-li flex pl-2 hover:pl-6 transition-all duration-150">
                   <Link to="/quotes" className="relative px-4 py-3 capitalize">
                     Quotes
+                    <div className="absolute bottom-0 left-0 h-0.5 bg-white w-0 transition-all duration-300"></div>
+                  </Link>
+                </li>
+                <li className="parent-li flex pl-2 hover:pl-6 transition-all duration-150">
+                  <Link to="/quotes" className="relative px-4 py-3 capitalize">
+                  Blog
+                    <div className="absolute bottom-0 left-0 h-0.5 bg-white w-0 transition-all duration-300"></div>
+                  </Link>
+                </li>
+                <li className="parent-li flex pl-2 hover:pl-6 transition-all duration-150">
+                  <Link to="/quotes" className="relative px-4 py-3 capitalize">
+                  satsang
+                    <div className="absolute bottom-0 left-0 h-0.5 bg-white w-0 transition-all duration-300"></div>
+                  </Link>
+                </li>
+                <li className="parent-li flex pl-2 hover:pl-6 transition-all duration-150">
+                  <Link to="/quotes" className="relative px-4 py-3 capitalize">
+                  spiritual vidos
+                    <div className="absolute bottom-0 left-0 h-0.5 bg-white w-0 transition-all duration-300"></div>
+                  </Link>
+                </li>
+                <li className="parent-li flex pl-2 hover:pl-6 transition-all duration-150">
+                  <Link to="/quotes" className="relative px-4 py-3 capitalize">
+                  Pranayam
+                    <div className="absolute bottom-0 left-0 h-0.5 bg-white w-0 transition-all duration-300"></div>
+                  </Link>
+                </li>
+                <li className="parent-li flex pl-2 hover:pl-6 transition-all duration-150">
+                  <Link to="/quotes" className="relative px-4 py-3 capitalize">
+                  Pranayam
                     <div className="absolute bottom-0 left-0 h-0.5 bg-white w-0 transition-all duration-300"></div>
                   </Link>
                 </li>
@@ -112,32 +140,69 @@ const Navbar = () => {
                 Events
               </Link>
               <div
-                className={`absolute bottom-5 left-0 h-0.5 bg-black ${
-                  pathname == "/contact-us" ? "w-full" : "w-0"
-                } transition-all duration-300 group-hover:w-full`}
+                className={`absolute bottom-5 left-0 h-0.5 bg-black ${pathname == "/contact-us" ? "w-full" : "w-0"
+                  } transition-all duration-300 group-hover:w-full`}
               ></div>
             </li>
             <li className="hover:text-black py-7 relative group">
               <Link to="/contact-us" className="cursor-pointer px-3">
-              Courses
+                Courses
               </Link>
               <div
-                className={`absolute bottom-5 left-0 h-0.5 bg-black ${
-                  pathname == "/contact-us" ? "w-full" : "w-0"
-                } transition-all duration-300 group-hover:w-full`}
+                className={`absolute bottom-5 left-0 h-0.5 bg-black ${pathname == "/contact-us" ? "w-full" : "w-0"
+                  } transition-all duration-300 group-hover:w-full`}
               ></div>
+              <ul className="invisible group-hover:visible absolute z-10 top-[5.4rem] left-0  font-normal  py-2 min-w-[250px] shadow-lg transition-all duration-200 opacity-0 group-hover:opacity-100 text-[15px]">
+                {/* <li className="parent-li flex pl-2 hover:pl-6 transition-all duration-150">
+                  <Link to="/quotes" className="relative px-4 py-3 capitalize">
+                    Quotes
+                    <div className="absolute bottom-0 left-0 h-0.5 bg-white w-0 transition-all duration-300"></div>
+                  </Link>
+                </li> */}
+                <li className="parent-li flex pl-2 hover:pl-6 transition-all duration-150">
+                  <Link to="/quotes" className="relative px-4 py-3 capitalize">
+                  Bal sanskar shibir
+                    <div className="absolute bottom-0 left-0 h-0.5 bg-white w-0 transition-all duration-300"></div>
+                  </Link>
+                </li>
+                <li className="parent-li flex pl-2 hover:pl-6 transition-all duration-150">
+                  <Link to="/quotes" className="relative px-4 py-3 capitalize">
+                  Science Of silence yoga
+                    <div className="absolute bottom-0 left-0 h-0.5 bg-white w-0 transition-all duration-300"></div>
+                  </Link>
+                </li>
+                <li className="parent-li flex pl-2 hover:pl-6 transition-all duration-150">
+                  <Link to="/quotes" className="relative px-4 py-3 capitalize">
+                  Advance meditation course
+                    <div className="absolute bottom-0 left-0 h-0.5 bg-white w-0 transition-all duration-300"></div>
+                  </Link>
+                </li>
+                <li className="parent-li flex pl-2 hover:pl-6 transition-all duration-150">
+                  <Link to="/quotes" className="relative px-4 py-3 capitalize">
+                  Sharwan nity sadhana
+                    <div className="absolute bottom-0 left-0 h-0.5 bg-white w-0 transition-all duration-300"></div>
+                  </Link>
+                </li>
+                <li className="parent-li flex pl-2 hover:pl-6 transition-all duration-150">
+                  <Link to="/quotes" className="relative px-4 py-3 capitalize">
+                  
+High Consciousness Sadhna
+                    <div className="absolute bottom-0 left-0 h-0.5 bg-white w-0 transition-all duration-300"></div>
+                  </Link>
+                </li>
+              </ul>
+
             </li>
-             <li className="hover:text-black py-7 relative group">
+            <li className="hover:text-black py-7 relative group">
               <Link to="/contact-us" className="cursor-pointer px-3">
                 Contact Us
               </Link>
               <div
-                className={`absolute bottom-5 left-0 h-0.5 bg-black ${
-                  pathname == "/contact-us" ? "w-full" : "w-0"
-                } transition-all duration-300 group-hover:w-full`}
+                className={`absolute bottom-5 left-0 h-0.5 bg-black ${pathname == "/contact-us" ? "w-full" : "w-0"
+                  } transition-all duration-300 group-hover:w-full`}
               ></div>
             </li>
-            
+
 
 
 
@@ -424,7 +489,7 @@ const Navbar = () => {
                 Outreach
               </Link>
             </li> */}
-     
+
           </ul>
           <div className="flex items-center gap-6">
             <div
@@ -437,25 +502,25 @@ const Navbar = () => {
               {/* <BiSearchAlt2 className="w-8 h-8 text-gray-500 cursor-pointer" /> */}
             </div>
 
-            <form class="flex items-center">   
-    <label for="simple-search" class="sr-only">Search..</label>
-    <div class="relative w-full">
-        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-            {/* <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+            <form class="flex items-center">
+              <label for="simple-search" class="sr-only">Search..</label>
+              <div class="relative w-full">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                  {/* <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5v10M3 5a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm12 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0V6a3 3 0 0 0-3-3H9m1.5-2-2 2 2 2"/>
             </svg> */}
-            <AiOutlineSearch className="w-6 h-6"/>
-        </div>
-       
-        <input type="text" id="simple-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..." required/>
-    </div>
-    {/* <button type="submit" class="p-2.5 ml-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  <AiOutlineSearch className="w-6 h-6" />
+                </div>
+
+                <input type="text" id="simple-search" class=" border border-gray-200   text-gray-900 text-sm rounded-lg focus:border-gray-600 focus:border-gray-400 block w-full pl-10 p-2.5  dark:bg-gray-600 dark:border-gray-200 dark:placeholder-gray-400 dark:text-white dark:focus:border-gray-200 " placeholder="Search..." required />
+              </div>
+              {/* <button type="submit" class="p-2.5 ml-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
         <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
         </svg>
         <span class="sr-only">Search</span>
     </button> */}
-</form>
+            </form>
 
             {/* <button className="py-3 px-10 bg-gray-600 hover:bg-gray-700 text-white font-medium rounded-sm">
               Donate
@@ -464,9 +529,8 @@ const Navbar = () => {
         </nav>
       </div>
       <div
-        className={`absolute top-0 left-0 w-screen h-screen z-10 bg-[#1C110B] overflow-hidden ${
-          mobileNav ? "block" : "hidden "
-        }`}
+        className={`absolute top-0 left-0 w-screen h-screen z-10 bg-[#1C110B] overflow-hidden ${mobileNav ? "block" : "hidden "
+          }`}
       >
         <div className="flex items-center justify-between px-6 py-10">
           <div className="flex items-center justify-center w-20 lg:w-[7rem] h-auto">
@@ -500,7 +564,7 @@ const Navbar = () => {
             <span className="text-white text-2xl font-semibold">Home</span>
             {/* <BsArrowRight className="w-8 h-8 text-white hover:text-slate-200" /> */}
           </Link>
-          
+
           <Link
             to={"/quotes"}
             className="flex justify-center items-center gap-8 cursor-pointer"
@@ -509,7 +573,7 @@ const Navbar = () => {
             <span className="text-white text-2xl font-semibold">Wisdom</span>
             {/* <BsArrowRight className="w-8 h-8 text-white hover:text-slate-200 rotate-90" /> */}
           </Link>
-          
+
           <Link
             to={"/quotes"}
             className="flex justify-end items-center gap-2 cursor-pointer"
@@ -530,7 +594,7 @@ const Navbar = () => {
           <Link
             to={"/"}
             className="flex justify-end items-center gap-2 cursor-pointer"
-            
+
           >
 
             <span className="text-white text-2xl font-semibold">Events</span>
